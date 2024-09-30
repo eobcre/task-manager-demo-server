@@ -1,7 +1,11 @@
+import Nav from './components/Nav';
+
 const App = () => {
   return (
     <div>
-      <div>Test</div>
+      <div>
+        <Nav />
+      </div>
     </div>
   );
 };
