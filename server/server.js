@@ -7,17 +7,15 @@ const commentsRoute = require('./routes/comments');
 const tasksRoute = require('./routes/tasks');
 dotenv.config();
 
-// app.use(cors());
-// app.use(express.json());
+app.use(cors());
+app.use(express.json());
+// routes
 app.use('/api', commentsRoute);
 app.use('/api', tasksRoute);
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running in ${process.env.PORT}`);
-});
 
-app.get('/', (req, res) => {
-  res.send('Test!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Test!');
+// });
 
 // mongo db
 mongoose
@@ -27,3 +25,7 @@ mongoose
     console.log('Connected to Mongo DB!');
   })
   .catch((err) => console.log(err));
+
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running in ${process.env.PORT}`);
+  });
