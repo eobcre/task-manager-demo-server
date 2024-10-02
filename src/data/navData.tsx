@@ -20,7 +20,7 @@ export const navData: NavItemProps[] = [
     id: nanoid(),
     iconName: 'proicons:settings',
     nav: 'Settings',
-    link: '',
+    link: '/Settings',
     style: 'text-white w-[32px] h-[32px]'
   },
 ];

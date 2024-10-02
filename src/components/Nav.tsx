@@ -22,7 +22,9 @@ const Nav = () => {
     <div className={`nav-container bg-purple duration-500 h-screen ${isNavOpen ? 'w-80' : 'w-20'}`} onClick={handleClickNavOpen}>
       <div className='flex flex-col justify-center gap-10 py-5'>
         <nav className='relative flex flex-col gap-10'>
-          <Icon icon='fluent-emoji-high-contrast:raccoon' className='home-icon absolute left-[1rem] text-white w-[40px] h-[40px]' />
+          <NavLink to='/'>
+            <Icon icon='fluent-emoji-high-contrast:raccoon' className='home-icon absolute left-[1rem] text-white w-[40px] h-[40px]' />
+          </NavLink>
           <div className='absolute top-[6rem] flex flex-col justify-center cursor-pointer w-full'>
             {navData.map((item: NavItemProps) => (
               <NavLink key={item.id} to={item.link} className={({ isActive }) => `nav-items px-5 py-5 w-full ${isActive ? 'bg-darkPurple' : ''}`}>
