@@ -10,7 +10,7 @@ const AssignTask: React.FC<AssignTaskProps> = ({ onSubmit }) => {
     <div className='flex items-center justify-centermin-h-screen'>
       <div className='fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50'>
         <div className='flex flex-col bg-lightGray rounded-lg shadow-lg p-10 w-[600px] h-auto'>
-          <h1 className='text-lg font-bold border-b pb-1'>Task Assignment</h1>
+          <h1 className='text-lg font-bold border-b border-gray-300 pb-1'>Task Assignment</h1>
           {/* task selection */}
           <div className='py-4'>
             <h3 className='text-md py-3'>Select the task that you want to assign to your team member</h3>

@@ -7,7 +7,7 @@ interface TabProps {
 
 const Tab: React.FC<TabProps> = ({ activeTab, setActiveTab }) => {
   return (
-    <div className='flex gap-10 border-b-2 border-gray-100 my-10'>
+    <div className='flex gap-10 border-b border-gray-300 my-10'>
       <div
         onClick={() => {
           setActiveTab('My Tasks');
