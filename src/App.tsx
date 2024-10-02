@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className='flex'>
       <Nav />
-      <main className={`w-full ${isNavOpen ? '330px' : '65px'}`}>
+      <main className={`bg-lightGray w-full ${isNavOpen ? '330px' : '65px'}`}>
         <Routes>
           <Route index element={<Tasks />} />
           <Route path='/Tasks' element={<Tasks />} />
