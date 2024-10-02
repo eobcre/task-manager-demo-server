@@ -7,12 +7,12 @@ interface TabProps {
 
 const Tab: React.FC<TabProps> = ({ activeTab, setActiveTab }) => {
   return (
-    <div className='flex gap-10 py-10'>
+    <div className='flex gap-10 border-b-2 border-gray-100 my-10'>
       <div
         onClick={() => {
           setActiveTab('My Tasks');
         }}
-        className={activeTab === 'My Tasks' ? 'text-dark font-bold border-b-4 border-purple cursor-pointer pb-1' : 'border-transparent'}
+        className={`font-bold ${activeTab === 'My Tasks' ? 'text-dark border-b-4 border-purple cursor-pointer pb-1' : 'border-transparent'}`}
       >
         <a href='#MyTasks'>My Tasks</a>
       </div>
@@ -20,7 +20,7 @@ const Tab: React.FC<TabProps> = ({ activeTab, setActiveTab }) => {
         onClick={() => {
           setActiveTab('Assigned');
         }}
-        className={activeTab === 'Assigned' ? 'text-dark font-bold border-b-4 border-purple cursor-pointer pb-1' : 'border-transparent'}
+        className={`font-bold ${activeTab === 'Assigned' ? 'text-dark border-b-4 border-purple cursor-pointer pb-1' : 'border-transparent'}`}
       >
         <a href='#Assigned'>Assigned</a>
       </div>
